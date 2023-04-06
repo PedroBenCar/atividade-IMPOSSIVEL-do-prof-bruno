@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Funcionários</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista de Funcionários</h1>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" />
+
+        <label for="salario">Salário:</label>
+        <input type="number" id="salario" />
+
+        <label for="departamento">Departamento:</label>
+        <input type="text" id="departamento" />
+
+        <button type="button" id="adicionar">Adicionar</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Salário</th>
+            <th>Departamento</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-corpo">
+        </tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
